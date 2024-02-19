@@ -6,9 +6,70 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 
-    
+    <style>
+
+   .para{
+
+      color: purple;
+      font-size: 55px;
+      letter-spacing: 10px;
+   }
+
+    </style>
 </head>
 <body>
-    <h1>Test page</h1>
+  <h1 id="para" class="para">
+   hello
+  </h1>
+
+  <h1 class="para">helo</h1>
+
+  <button id="btn" >Click me</button>
+
+  <div id="mydiv">
+
+  </div>
+
+
+
+
+  <script>
+   let heading=document.getElementsByTagName("h1");
+   let btn=document.getElementById("btn");
+   let para=document.querySelectorAll(".para")
+   console.log(para[1]);
+
+
+
+   btn.addEventListener('click',()=>{
+
+      let mydiv=document.getElementById("mydiv");
+
+      let list=document.createElement("ul");
+
+      console.log(list);
+
+      let li=document.createElement("li");
+
+      li.innerHTML="<b>hello<b>";
+         console.log(li);
+
+       list.appendChild(li);
+
+       mydiv.appendChild(list);
+
+   
+   })
+
+
+   function changeStyle(){
+
+para.classList.add("para");
+
+   }
+  
+
+
+  </script>
 </body>
 </html>

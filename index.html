@@ -32,19 +32,29 @@
           <h3>+91 1234567890</h3>
         </div>
 
-        <div class="menu-btn"><i class="bx bx-menu "></i></div>
 
-        <nav  class="mobile-nav">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Blog & News</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-        </nav>
+        <div class="menu-btn"><i class="bx bx-menu"></i></div>
+
+       
+
+        
       
       </header>
+      <nav class="mobile-nav">
 
+        <!-- close button -->
+        <div class="close-btn">
+          <h3>X</h3>
+        </div>
+         
+        <ul >
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Blog& News</a></li>
+          <li><a href="#">Login</a></li>
+     
+      </ul>
+    </nav>
       <section class="hero-secction">
         <div class="hero-left">
           <p id="trending">Trending</p>
@@ -122,14 +132,14 @@
       
         <div class="tabs">
 
-          <button class="tablinks ">Front End</button>
-          <button class="tablinks active">Full Stack</button>
+          <button class="tablinks active">Front End</button>
+          <button class="tablinks ">Full Stack</button>
 
         </div>
 
-        <div class="tab-content" style="display: none;" id="tab1">
+        <div class="tab-content" style="display: block;" id="tab1">
 
-       <div class="course-container">
+       <div class="course-container horizontal-scroll" >
 
         
         <div class="course-card">
@@ -182,7 +192,7 @@
           
         </div>
 
-        <div class="tab-content " style="display: block;" id="tab1">
+at        <div class="tab-content " style="display: none;" id="tab2">
 
           <div class="course-container">
    
@@ -219,7 +229,7 @@
              </ul>
            </div>
            <div class="course-card">
-             <h3>Fullstack Course</h3>
+             <h3>Python</h3>
              <p>Lorem ipsum, dolor sit amet consectetur .</p>
              <p class="price">$250</p>
              <a href="" class="button button-primary">Join Now</a>
@@ -390,12 +400,15 @@
    </div>
      
     </footer>
-    
-    <script>
+
+
+    <script src="./js/main.js">
+
    
 
-
     </script>
+    
+  
    
   </body>
 </html>
